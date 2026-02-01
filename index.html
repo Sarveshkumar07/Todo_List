@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Todo List</h1>
+
+  <!-- Add Task -->
+  <input type="text" id="taskName" placeholder="Task name">
+  <input type="date" id="taskDate">
+
+  <select id="taskPriority">
+    <option value="">Priority</option>
+    <option value="High">High</option>
+    <option value="Medium">Medium</option>
+    <option value="Low">Low</option>
+  </select>
+
+  <button onclick="addTask()">Add Task</button>
+
+  <h2>Today's Tasks</h2>
+  <div id="todayTasks"></div>
+
+  <h2>Future Tasks</h2>
+  <div id="futureTasks"></div>
+
+  <h2>Completed Tasks</h2>
+  <div id="completedTasks"></div>
+
+  <script src="back.js"></script>
+</body>
+</html>

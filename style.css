@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+input, select, button {
+  padding: 8px;
+  margin: 5px;
+}
+
+.task {
+  border: 1px solid black;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.completed {
+  background-color: lightgray;
+}
