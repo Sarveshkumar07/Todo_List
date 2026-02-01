@@ -1,12 +1,11 @@
-// get data from localStorage OR empty array
+
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
-// save data to localStorage
 function saveTasks() {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
-// add task
+
 function addTask() {
   let name = document.getElementById("taskName").value;
   let date = document.getElementById("taskDate").value;
@@ -33,7 +32,6 @@ function addTask() {
   document.getElementById("taskPriority").value = "";
 }
 
-// show tasks on screen
 function showTasks() {
   document.getElementById("todayTasks").innerHTML = "";
   document.getElementById("futureTasks").innerHTML = "";
@@ -62,14 +60,14 @@ function showTasks() {
   });
 }
 
-// mark complete
+
 function completeTask(index) {
   tasks[index].completed = true;
   saveTasks();
   showTasks();
 }
 
-// delete task
+
 function deleteTask(index) {
   tasks.splice(index, 1);
   saveTasks();
